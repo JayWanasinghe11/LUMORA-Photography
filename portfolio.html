@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Lumora Photography — a cinematic fictional photography portfolio showcasing portraits, weddings, landscapes and city stories."
+    />
+    <title>Portfolio | Lumora Photography</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="custom-cursor" id="customCursor" aria-hidden="true">
+      <span>VIEW</span>
+    </div>
+    <div
+      class="site-loader"
+      id="siteLoader"
+      role="status"
+      aria-label="Loading Lumora Photography"
+    >
+      <div class="loader-mark">LUMORA<span>.</span></div>
+      <div class="loader-track"><div class="loader-progress"></div></div>
+      <span class="loader-caption">VISUAL STORIES / EST. 2020</span>
+    </div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Lumora home"
+          >LUMORA<span>.</span></a
+        >
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+          <a href="index.html" data-page="index">Home</a
+          ><a href="portfolio.html" data-page="portfolio">Portfolio</a
+          ><a href="contact.html" data-page="contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-label="Toggle light and dark theme"
+          >
+            ☼</button
+          ><button
+            class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero container">
+        <div class="eyebrow">The collection / 01</div>
+        <h1>A world in frames.</h1>
+        <p>
+          A curated selection of people, places, and fleeting moments. Browse by
+          category or open a photo to see it up close.
+        </p>
+      </section>
+      <section class="container section" style="padding-top: 0">
+        <div
+          class="filters"
+          role="group"
+          aria-label="Filter photos by category"
+        >
+          <button
+            class="filter-btn active"
+            data-filter="All"
+            aria-pressed="true"
+          >
+            All work</button
+          ><button
+            class="filter-btn"
+            data-filter="Portraits"
+            aria-pressed="false"
+          >
+            Portraits</button
+          ><button class="filter-btn" data-filter="Nature" aria-pressed="false">
+            Nature</button
+          ><button class="filter-btn" data-filter="Urban" aria-pressed="false">
+            Urban</button
+          ><button
+            class="filter-btn"
+            data-filter="Weddings"
+            aria-pressed="false"
+          >
+            Weddings
+          </button>
+        </div>
+        <div
+          class="gallery masonry-gallery"
+          id="portfolioGallery"
+          aria-live="polite"
+        ></div>
+      </section>
+      <section
+        class="container polaroid-section"
+        aria-labelledby="polaroidHeading"
+      >
+        <div class="eyebrow">The print room / 02</div>
+        <h2 id="polaroidHeading">The Polaroid Wall.</h2>
+        <p class="polaroid-help">
+          Drag photos to rearrange them. Double-click a print to preview it, or
+          focus it and press Enter.
+        </p>
+        <div
+          id="polaroidWall"
+          class="polaroid-wall"
+          aria-label="Draggable photo print wall"
+        ></div>
+      </section>
+      <section class="cta">
+        <h2>Your story is next.</h2>
+        <p>Let's turn your idea into a lasting memory.</p>
+        <a class="btn" href="contact.html">Get in touch ↗</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="logo" href="index.html">LUMORA<span>.</span></a
+        ><small
+          >© <span id="year"></span> Lumora Photography · Fictional studio
+          portfolio</small
+        ><small class="footer-tagline"
+          ><span class="footer-star">✦</span> Every Frame Tells a Story.</small
+        >
+      </div>
+    </footer>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo preview"
+      aria-hidden="true"
+    >
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close photo preview"
+      >
+        ×</button
+      ><button
+        type="button"
+        class="lightbox-arrow lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous photo"
+      >
+        ←</button
+      ><button
+        type="button"
+        class="lightbox-arrow lightbox-next"
+        id="lightboxNext"
+        aria-label="Next photo"
+      >
+        →</button
+      ><span class="lightbox-count" id="lightboxCount" aria-live="polite"></span
+      ><img id="lightboxImg" alt="" />
+      <p id="lightboxTitle"></p>
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/ultimate.js" defer></script>
+    <script src="js/creative.js" defer></script>
+  </body>
+</html>

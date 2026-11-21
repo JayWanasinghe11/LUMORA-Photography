@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Lumora Photography — a cinematic fictional photography portfolio showcasing portraits, weddings, landscapes and city stories."
+    />
+    <title>Contact | Lumora Photography</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="custom-cursor" id="customCursor" aria-hidden="true">
+      <span>VIEW</span>
+    </div>
+    <div
+      class="site-loader"
+      id="siteLoader"
+      role="status"
+      aria-label="Loading Lumora Photography"
+    >
+      <div class="loader-mark">LUMORA<span>.</span></div>
+      <div class="loader-track"><div class="loader-progress"></div></div>
+      <span class="loader-caption">VISUAL STORIES / EST. 2020</span>
+    </div>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html" aria-label="Lumora home"
+          >LUMORA<span>.</span></a
+        >
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+          <a href="index.html" data-page="index">Home</a
+          ><a href="portfolio.html" data-page="portfolio">Portfolio</a
+          ><a href="contact.html" data-page="contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="themeToggle"
+            aria-label="Toggle light and dark theme"
+          >
+            ☼</button
+          ><button
+            class="icon-btn menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero container">
+        <div class="eyebrow">Say hello / 03</div>
+        <h1>Let's make art together.</h1>
+        <p>
+          Planning a session, celebrating a milestone, or just want to say
+          hello? I'd love to hear your story.
+        </p>
+      </section>
+      <section class="container contact-layout">
+        <div class="contact-info">
+          <div class="eyebrow">Get in touch</div>
+          <h2>Every story<br />starts somewhere.</h2>
+          <p>
+            Use the form to compose your message. Once validated, your email app
+            will open with your message ready to send.
+          </p>
+          <p>
+            <strong>Email</strong><br /><a href="mailto:hello@lumora.example"
+              >hello@lumora.example</a
+            >
+          </p>
+          <p>
+            <strong>Location</strong><br />Available worldwide · Fictional
+            studio
+          </p>
+          <p>
+            <small
+              >Demo note: Replace the example email with a real inbox before
+              publishing.</small
+            >
+          </p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name *</label
+            ><input
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              maxlength="100"
+              placeholder="Your full name"
+            /><span class="error" id="nameError"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email address *</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="you@example.com"
+            /><span class="error" id="emailError"></span>
+          </div>
+          <div class="field">
+            <label for="subject">Subject *</label
+            ><input
+              id="subject"
+              name="subject"
+              required
+              maxlength="150"
+              placeholder="What can we create together?"
+            /><span class="error" id="subjectError"></span>
+          </div>
+          <div class="field">
+            <label for="message">Your message *</label
+            ><textarea
+              id="message"
+              name="message"
+              required
+              maxlength="3000"
+              placeholder="Tell me a little about your project..."
+            ></textarea
+            ><span class="error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn">Compose email ↗</button>
+          <p
+            class="form-status"
+            id="formStatus"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a class="logo" href="index.html">LUMORA<span>.</span></a
+        ><small
+          >© <span id="year"></span> Lumora Photography · Fictional studio
+          portfolio</small
+        ><small class="footer-tagline"
+          ><span class="footer-star">✦</span> Every Frame Tells a Story.</small
+        >
+      </div>
+    </footer>
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Photo preview"
+      aria-hidden="true"
+    >
+      <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close photo preview"
+      >
+        ×</button
+      ><button
+        type="button"
+        class="lightbox-arrow lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous photo"
+      >
+        ←</button
+      ><button
+        type="button"
+        class="lightbox-arrow lightbox-next"
+        id="lightboxNext"
+        aria-label="Next photo"
+      >
+        →</button
+      ><span class="lightbox-count" id="lightboxCount" aria-live="polite"></span
+      ><img id="lightboxImg" alt="" />
+      <p id="lightboxTitle"></p>
+    </div>
+    <script src="js/main.js" defer></script>
+    <script src="js/ultimate.js" defer></script>
+    <script src="js/creative.js" defer></script>
+  </body>
+</html>
